@@ -18,9 +18,6 @@ public class CurrencyExternalService {
 
     @Cacheable(value = "currencies", key = "#currency")
     public CurrencyDto getCurrencyRatesFromApi(final String currency) {
-
-        ClientException.throwBadRequest("you are here");
-
         Currency.isValidCurrency(currency);
 
         final var url =
