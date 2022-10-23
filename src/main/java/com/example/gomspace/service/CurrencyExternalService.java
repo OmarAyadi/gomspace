@@ -26,7 +26,6 @@ public class CurrencyExternalService {
                         currency
                 );
 
-
         final var result = restTemplate.getForEntity(url, CurrencyDto.class);
 
         if (result.getStatusCode() != HttpStatus.OK) {

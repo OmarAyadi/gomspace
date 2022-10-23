@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
 @Data
 @Builder
 public class AccountDto {
+
     @NotNull
     private Long ownerId;
 

@@ -14,10 +14,11 @@ import java.util.Map;
 @Builder
 @Data
 public class CurrencyDto {
-
     private String result;
+
     @JsonAlias("base_code")
     private String baseCode;
+
     @JsonAlias("conversion_rates")
     private Map<String, Double> conversionRates = new HashMap<>();
 }

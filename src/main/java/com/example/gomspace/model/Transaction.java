@@ -34,7 +34,9 @@ public class Transaction {
     private Account fromAccount;
 
     private double amount;
+
     private double currencyExchangeRate;
+
     private double evaluatedAmount;
 
     @Column(nullable = false)

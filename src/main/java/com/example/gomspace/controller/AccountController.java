@@ -46,7 +46,6 @@ public class AccountController {
         return ResponseEntity.ok(transactions);
     }
 
-
     @GetMapping("/{accountId}/history")
     public ResponseEntity<Page<Transaction>> getAccountHistory(
             final @PathVariable Long accountId,

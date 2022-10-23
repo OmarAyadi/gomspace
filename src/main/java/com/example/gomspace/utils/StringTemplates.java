@@ -6,7 +6,6 @@ public interface StringTemplates {
         return String.format("invalid %s value : %s, possible values %s", type, value, possibleTypes);
     }
 
-
     static String invalidAccountId(final Long id) {
         return String.format("invalid account id: %s", id);
     }

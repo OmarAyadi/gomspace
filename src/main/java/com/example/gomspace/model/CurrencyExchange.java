@@ -12,11 +12,14 @@ import lombok.NoArgsConstructor;
 public class CurrencyExchange {
 
     private String currency;
+
     private String toCurrency;
 
     @Builder.Default
     private double rate = 1;
+
     private double amount;
+
     private double convertedAmount;
 
     public static CurrencyExchange defaultCurrencyExchange(final String currency, final double amount) {

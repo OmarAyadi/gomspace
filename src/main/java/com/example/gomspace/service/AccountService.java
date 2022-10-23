@@ -54,7 +54,6 @@ public class AccountService {
         return transactionService.getTransactionsByAccountId(accountId, pageable);
     }
 
-
     public Account withdraw(final long accountId, final OperationDto operationDto) {
 
         final var account = getAccountById(accountId);
